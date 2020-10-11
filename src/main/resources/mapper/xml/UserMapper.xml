@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.blogsweb.web.blogsweb.mapper.UserMapper">
+
+    <!-- 所有用户 -->
+    <select id="findAllUser" resultType="com.blogsweb.web.blogsweb.model.User">
+        SELECT u.user_id,u.user_code,u.sex,u.nickname,u.realname,u.username,u.tel,u.passwords,u.email,u.isdelete from `user` u WHERE u.isdelete='Y'
+    </select>
+
+    <!--注册用户-->
+    <insert id="insertUser" keyProperty="userId" useGeneratedKeys="true" parameterType="com.blogsweb.web.blogsweb.model.User">
+        INSERT INTO `user`(user_code,sex,nickname,realname,username,tel,passwords,email)
+        VALUES(#{userCode},#{sex},#{nickname},#{realname},#{username},#{tel},#{passwords},#{email})
+    </insert>
+
+    <!-- 根据用户编号查询用户 -->
+    <select id="findUserByCode" resultType="com.blogsweb.web.blogsweb.model.User" parameterType="String">
+        SELECT u.user_id,u.user_code,u.sex,u.nickname,u.realname,u.username,u.tel,u.passwords,u.email,u.isdelete from `user` u WHERE u.isdelete='Y' AND u.user_code=#{userCode}
+    </select>
+
+    <!-- 根据用户编号查询用户 -->
+    <select id="findUserByCodeCount" resultType="Integer" parameterType="String">
+        SELECT COUNT(u.user_id) from `user` u WHERE u.isdelete='Y' AND u.user_code=#{userCode}
+    </select>
+
+
+</mapper>

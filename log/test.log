@@ -1,0 +1,16 @@
+22:12:51.498 [restartedMain] INFO  com.blogsweb.web.blogsweb.BlogswebApplication - Starting BlogswebApplication on DESKTOP-A4FLELI with PID 9064 (E:\blogsweb\target\classes started by Administrator in E:\blogsweb)
+22:12:51.503 [restartedMain] INFO  com.blogsweb.web.blogsweb.BlogswebApplication - The following profiles are active: druid
+22:12:52.140 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+22:12:52.510 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-80"]
+22:12:52.510 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+22:12:52.511 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.34]
+22:12:52.567 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+22:12:52.613 [restartedMain] INFO  com.blogsweb.web.blogsweb.config.JedisConfig - Jedis Pool build start 
+22:12:52.618 [restartedMain] INFO  com.blogsweb.web.blogsweb.config.JedisConfig - Jedis Pool build success  host=39.102.71.103 , port=6379
+22:12:52.721 [restartedMain] DEBUG org.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+22:12:53.119 [restartedMain] WARN  org.thymeleaf.templatemode.TemplateMode - [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:12:53.351 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+22:12:53.360 [restartedMain] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+22:12:53.368 [restartedMain] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+22:12:53.489 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-80"]
+22:12:53.503 [restartedMain] INFO  com.blogsweb.web.blogsweb.BlogswebApplication - Started BlogswebApplication in 2.394 seconds (JVM running for 3.152)
